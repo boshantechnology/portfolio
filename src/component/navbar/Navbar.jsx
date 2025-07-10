@@ -17,16 +17,17 @@ const Navbar = () => {
                 <input type="checkbox" id="check1"/>
                 <span>
                     <li><a href ="#">Company</a></li>
-                    <li><a href ="#">Portfolio</a></li>
-                    <li><a href ="#">Services</a></li>
-                    <li><a href ="#">Hire</a></li>
-                    <li><a href ="#">Blog</a></li>
+                    <li><a href ="@">Portfolio</a></li>
+                    <li><a href ="$">Services</a></li>
+                    <li><a href ="^">Hire</a></li>
+                    <li><a href ="&">Blog</a></li>
                     
-                    <li className='nav-contact'><a>
+                    <div className='nav-contact'>
+                        <a href="contact">
                         <div className='icons'>
                             <p>ContactUs</p>
                              <i class="fa-solid fa-phone "></i>
-                        </div></a></li>
+                        </div></a></div>
 
                     <label for="check1" className='menu-close'><i class="fa-solid fa-xmark"></i></label>
                 </span>

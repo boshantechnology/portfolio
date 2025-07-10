@@ -66,9 +66,10 @@ h1{
     height:40px;
     width:40px;
     text-align: center;
-    padding-top: 16px;
+    padding-top: 18px;
      text-decoration: none;
      margin-left: 2px;
+     font-size: 1.5rem;
 }
 
 .header-social{
