@@ -8,7 +8,6 @@ import stars from "../../assets/star.png"
 import half_star from "../../assets/half-star.png"
 import "./Header.css"
 
-
 const Header = () => {
   return (
     <div className='headers'>

@@ -1,6 +1,7 @@
 .headers{
     width:100%;
-    background: linear-gradient(90deg , rgb(2, 57, 109) , rgb(77, 191, 226));
+    /* background: linear-gradient(90deg , rgb(2, 57, 109) , rgb(77, 191, 226)); */
+     background: #f39c12 ;
     height:auto;
     padding-bottom: 15px;
     

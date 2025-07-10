@@ -39,7 +39,8 @@ nav{
     margin-top: 0;
     font-weight: 600;
     letter-spacing: 1.5px;
-     color: white;
+    color: white;
+    margin-left: 5px;
 }
 span{
     display:flex;
@@ -66,7 +67,8 @@ span li a::after{
     position:absolute;
     height: 2px;
     /* width:100%; */
-    background-color: rgb(30, 30, 235);
+    /* background-color: rgb(30, 30, 235); */
+     background-color: #fff;
     left:0;
     bottom:0;
     transition: 0.15s ease-in-out;
@@ -77,6 +79,7 @@ span li a:hover:after{
 }
 .nav-contact{
     margin-left: 20px;
+    text-decoration: none;
 }
 .nav-contact  div{
    border:2px solid black;
@@ -89,12 +92,11 @@ span li a:hover:after{
    width: 170px;
    height: 50px;
    padding-left: 15px;
+ 
   
 }
-.nav-contact a{
- text-decoration: none;
 
-}
+
 .icons i{
     border:1px solid blue;
     color: white;
@@ -123,6 +125,7 @@ span li a:hover:after{
     /* color: rgb(22, 157, 211); */
     font-size: 1.5rem;
     display: none;
+    color: black;
 }
 .menu-open{
     top:60%;
@@ -130,8 +133,10 @@ span li a:hover:after{
     /* transform: translateY(-50%); */
 }
 .menu-close{
-    top:-600px;
-    right: -250px;
+    /* top:-600px; */
+    top:-55%;
+    /* right: -400px; */
+    right:-90%
 }
 #check1{
     display: none;
@@ -139,27 +144,52 @@ span li a:hover:after{
 @media(max-width:900px){
     span{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width:80%;
+        align-items:start;
+        justify-content:left;
+        width:70%;
         height: 100vh;
         position: fixed;
         top:0;
-        right:-100%;
+        left:0;
+        right:0;
         z-index:100;
-        background-color:blue;
+        background-color:white;
         transition: all 0.2s ease-in-out;
+        padding-top: 40px;
+        gap:5px
+    }
+    .nav-lg{
+        margin-top: -7px;
+        height:80px;
+        /* border:1px solid white */
+    }
+    .nav-lg img{
+        height:70px;
+    }
+    .nav-lg .para1{
+        margin-top: -3px;
+        font-size: 2rem;
+    }
+    .nav-lg .para2{
+        font-size: .8rem;
     }
     span li{
-        margin-top: 20px;
+        margin-top: 1px;
+        padding-left: 10px;
     }
     span li a{
-        padding:10px
+        padding:5px;
+        color: black;
     }
     .menu-open, .menu-close{
        display: block;
     }
+    .icons{
+        margin-left: -18px;
+        margin-top: 30px;
+    }
     #check1:checked ~ span{
-        right:0;
+        left:0;
+        display: none;
     }
 }
